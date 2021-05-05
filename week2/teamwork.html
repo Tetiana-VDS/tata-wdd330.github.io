@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <script>
+        function myFunction() {
+            let yourName = document.getElementById("name_input").value;
+            document.getElementById("name_display").innerHTML = yourName;
+        }
+
+
+        function sumOfNumber() {
+            let argument = document.getElementById("arguments").value;
+            let result = document.getElementById("result");
+            let mainAgrument = parseInt(argument);
+            if (argument !== NaN) {
+
+                result.innerHTML = sum(mainAgrument);
+            }
+        }
+
+        function sum(number) {
+            let total = 0;
+            for (let i = 1; i <= number; i++) {
+                total += i;
+            }
+            return total;
+        }
+
+        function sumOfTwoInputs() {
+            let numberOne = parseFloat(document.getElementById("numberOne").value);
+            let numberTwo = parseFloat(document.getElementById("numberTwo").value);
+            if (
+                (numberOne !== NaN) & (numberTwo !== NaN)) {
+                let sumOfTwo = numberOne + numberTwo;
+                document.getElementById("allInputs").innerHTML = sumOfTwo;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Team Assignment 1</h1>
+
+
+    <section>
+        <h2>Output the input</h2>
+        <input id="name_input" type="text" />
+        <button onclick="myFunction()">Click me</button>
+        <div id="name_display"></div>
+    </section>
+
+    <section>
+        <h2>Add the numbers of input argument</h2>
+        <p>Insert your number</p>
+        <input type="text" id="arguments" />
+        <button id="display_sum" onclick="sumOfNumber()">Count</button>
+        <div id="result"></div>
+
+    </section>
+    <section>
+        <h2>Add two inputs</h2>
+        <input id="numberOne" type="number" placeholder="Enter a number" />
+        <input id="numberTwo" type="number" placeholder="Enter a number" />
+        <button id="display_inputs" onclick="sumOfTwoInputs()">Add</button>
+        <div id="allInputs"></div>
+
+    </section>
+
+</body>
+
+</html>
