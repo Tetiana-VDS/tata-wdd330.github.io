@@ -25,15 +25,32 @@
         }
         console.log(isPositive(7))
 
-        let isPositive1 = (number) =>
+        let isPositive1 = number =>
             number >= 0
 
         console.log(isPositive1(7));
+
+        function randomNumber() {
+            return Math.random
+        }
+        console.log(randomNumber());
+
+        let randomNumber1 = () => Math.random
+
+        console.log(randomNumber1());
+
+
+        document.addEventListener('click', function () {
+            console.log('click')
+        })
+
+        document.addEventListener('click', () => console.log('click'))
     </script>
 </head>
 
 <body>
     <h1>Comparing Ordinary Functions to Arrow Functions</h1>
+    <p>Please, check the console!</p>
 </body>
 
 </html>
