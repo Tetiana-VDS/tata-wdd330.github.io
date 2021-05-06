@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <style>
+
+    </style>
+    <script>
+        const age = 23;
+        if (age < 18) {
+            console.log('Sorry, you are not old enough to play this game');
+        } else {
+            console.log('Enjoy the Game!')
+        }
+
+
+        const n = 12;
+        if (n % 2 === 0) {
+            console.log('n is an even number');
+        } else {
+            console.log('n is an odd number');
+        }
+
+
+        const number = 6;
+        if (number === 4) {
+            console.log('You rolled a four');
+        } else if (number === 5) {
+            console.log('You rolled a five');
+        } else if (number === 6) {
+            console.log('You rolled a six');
+        } else {
+            console.log('You rolled a number less than four');
+        }
+
+        //Methos Switch
+        const number1 = 3;
+        switch (number1) {
+            case 4:
+                console.log('You rolled a four');
+                break;
+            case 5:
+                console.log('You rolled a five');
+                break;
+            case 6:
+                console.log('You rolled a six');
+                break;
+            default:
+                console.log('You rolled a number less than four');
+                break;
+        }
+
+        //While Loops
+        let bottles = 6;
+        while (bottles > 0) {
+            console.log(`There were ${bottles} green bottles, hanging on a wall. And if one green bottle should accidentally
+        fall, there'd be ${bottles-1} green bottles hanging on the wall`);
+            bottles--;
+        }
+
+        //do ... while Loops
+        let bottles1 = 3;
+        do {
+            console.log(`There were ${bottles1} green bottles, hanging on a wall. And if one green bottle should accidentally fall,
+there'd be ${bottles1-1} green bottles hanging on the wall`);
+            bottles1--;
+        } while (bottles1 > 0) //the condition comesafterthe block of code
+
+
+        // For Loops
+        let bottles2 = 2; // bottles is initialized here instead
+        for (; bottles2 > 0;) { // empty initialization and increment
+            console.log(`There were ${bottles2} green bottles, hanging on a wall. And if one green bottle should accidentally
+        fall, there'd be ${bottles2-1} green bottles hanging on the wall`);
+            bottles2--; // increment moved into code block
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Logic</h1>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <style>
+
+    </style>
+    <script>
+        let zoo = new Map();
+
+        zoo.set('Zebra', 5);
+        zoo.set('Monkey', 87);
+        zoo.set('Giraf', 10);
+        zoo.set('Elephant', 5);
+        zoo.set('Gorilla', 8);
+
+        console.log(zoo)
+
+        let gorillaCount = zoo.get('Gorilla')
+        console.log(gorillaCount)
+
+        for (let [key, value] of zoo) {
+            console.log(key + ':' + value);
+        }
+
+        zoo.delete('Monkey');
+        console.log(zoo)
+        console.log(zoo.size)
+
+        //Converting Maps to Arrays
+
+        myArray = Array.from(zoo);
+        console.log(myArray) //Maps can be converted into a nested array of key-value pairs
+
+
+        
+    </script>
+</head>
+
+<body>
+
+    <h1>Map</h1>
+
+
+
+
+</body>
+
+</html>
