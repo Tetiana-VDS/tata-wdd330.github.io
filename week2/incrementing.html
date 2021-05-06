@@ -5,43 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Assignment 1</title>
-    <script>
-        function myFunction() {
-
-            let x = 3;
-            let y = x++;
-            console.log(x);
-            console.log(y);
+    <style>
+        .dec {
+            display: inline-block;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 5px 10px;
+            margin: 10px;
         }
+
+        .inc {
+            display: inline-block;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 5px 10px;
+            margin: 10px;
+        }
+
+        #nGuests {
+            padding: 6px;
+        }
+    </style>
+    <script>
+        let myNumber = 42;
+        console.log(myNumber++);
+        console.log(myNumber);
+
+        console.log(++myNumber);
+        console.log(myNumber);
+
+        console.log(myNumber--);
+        console.log(myNumber);
+
+        console.log(--myNumber);
+        console.log(myNumber);
+
+        let num1 = (++myNumber) + (myNumber++);
+        // 43 + 43 = 86
+        console.log(num1);
+
+        let myNumber2 = 42;
+        let num2 = (myNumber2++) + (++myNumber2);
+        // 42 + 44 = 86
+        console.log(num2);
+
+        let x = 3;
+        let y = x++;
+
+        console.log(`x:${x}, y:${y}`);
+        // expected output: "x:4, y:3"
+
+        let a = 3;
+        const b = ++a;
+
+        console.log(`a:${a}, b:${b}`);
+        // expected output: "a:4, b:4"
+
+        let i = 3;
+        const d = i--;
+
+        console.log(`i:${i}, d:${d}`);
+        // expected output: "x:2, y:3"
+
+        let k = 3;
+        const s = --k;
+
+        console.log(`k:${k}, s:${s}`);
+        // expected output: "a:2, b:2"
+
+  
     </script>
 </head>
 
 <body>
 
-    <h1>Incrementing</h1>
-    <!-- 
+    <h1>Incrementing & Decrementing</h1>
 
-    <section>
-        <h2>Increment the number by 1</h2>
-        <input id="number_input1" type="number" placeholder="Enter a number" />
-        <button onclick="myFunction1()">Click me </button>
-        <div id="number_display1"></div>
-
-    </section>
-    <section>
-        <h2>Increment the number by 1</h2>
-        <input id="number_input2" type="number" placeholder="Enter a number" />
-        <button onclick="myFunction2()">Click me </button>
-        <div id="number_display2"></div>
-
-    </section>
-    <section>
-        <h2>Increment the number by 1</h2>
-        <input id="number_input3" type="number" placeholder="Enter a number" />
-        <button onclick="myFunction3()">Click me </button>
-        <div id="number_display3"></div>
-
-    </section> -->
 
 
 </body>

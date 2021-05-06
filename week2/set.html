@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <style>
+
+    </style>
+    <script>
+        const mySet = new Set();
+
+        //Add values
+        mySet.add(60);
+        mySet.add(21);
+        mySet.add(56);
+        mySet.add(89);
+        mySet.add({
+            name: 'Tania',
+            age: 26
+        });
+        mySet.add("dcode");
+        mySet.add(68.89);
+
+        console.log(mySet)
+        // Find the size of set 
+        console.log("How big is mySet? " + mySet.size)
+
+        //Check fo value
+        console.log("Does the set contain the number 21? " + mySet.has(21));
+
+        //Delete Item
+        mySet.delete("dcode");
+        console.log(mySet)
+
+        //To convert the Set to an Array 
+        const myArray = Array.from(mySet);
+        console.log(myArray)
+    </script>
+</head>
+
+<body>
+
+    <h1>Sets</h1>
+
+
+
+
+</body>
+
+</html>

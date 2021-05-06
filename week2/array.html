@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <style>
+
+    </style>
+    <script>
+        const items = [{
+            name: 'Bike',
+            price: 100
+        }, {
+            name: 'Phone',
+            price: 800
+        }, {
+            name: 'TV',
+            price: 200
+        }, {
+            name: 'Keyboard',
+            price: 30
+        }, {
+            name: 'Computer',
+            price: 1500
+        }, {
+            name: 'Book',
+            price: 5
+        }, {
+            name: 'Album',
+            price: 10
+        }, ]
+        console.log(items);
+
+        //Filter 
+        const filteredItems = items.filter((item) => {
+            return item.price <= 100
+
+        })
+        console.log(filteredItems);
+        //Map Method
+        const itemsName = items.map((item) => {
+            return item.name
+        })
+        console.log(itemsName);
+
+        //Find an Item Method
+        const foundItem = items.find((item) => {
+            return item.name === 'Bike'
+        })
+        console.log(foundItem);
+        // ForEach Method
+        items.forEach((item) => {
+            console.log(item.price);
+        })
+
+        //Some
+        const inexpensiveItems = items.some((item) => {
+            return item.price <= 100
+        })
+        console.log(inexpensiveItems);
+        // Every
+        const allInexpensiveItems = items.every((item) => {
+            return item.price <= 100
+        })
+
+        console.log(allInexpensiveItems);
+
+        //Reduce (to count total)
+        const total = items.reduce((currentTotal, item) => {
+            return item.price + currentTotal
+        }, 0)
+        console.log(total);
+
+
+        // New Array
+        const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk'];
+        console.log(avengers);
+
+
+        const deletedItem =
+            delete avengers[3];
+        console.log(deletedItem); // --> to delete permanently
+
+        const shortList = avengers.slice(2, 4); //starts at the third item and finishes at the fourth 
+        console.log(shortList);
+
+
+        //Merging Arrays
+        // The concat() method can be used to merge an array with one or more array
+        const moreAvangers =
+            avengers.concat(['Hulk', 'Hawkeye', 'Black Widow']);
+        console.log(moreAvangers);
+
+        const sortItems =
+            moreAvangers.sort();
+        console.log(sortItems); //It is alphabetical order by default for String objects permanently.
+
+
+        //Multidimensional Arrays
+        const summer = ['Jun', 'Jul', 'Aug'];
+        const winter = ['Dec', 'Jan', 'Feb'];
+        const nested = [summer, winter];
+        console.log(nested);
+        const flat = [...summer, ...winter];
+        console.log(flat);
+    </script>
+</head>
+
+<body>
+
+    <h1>JS Array Methods</h1>
+
+
+
+
+</body>
+
+</html>
