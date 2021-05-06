@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(a, b) {
+            return a + b
+        }
+        console.log(sum(10, 6))
+        let sum2 = (a, b) => {
+            return a + b
+
+        }
+        console.log(sum2(10, 6))
+        //or
+        let sum3 = (a, b) => a + b
+        console.log(sum3(10, 6))
+
+
+        function isPositive(number) {
+            return number >= 0
+        }
+        console.log(isPositive(7))
+
+        let isPositive1 = (number) =>
+            number >= 0
+
+        console.log(isPositive1(7));
+    </script>
+</head>
+
+<body>
+    <h1>Comparing Ordinary Functions to Arrow Functions</h1>
+</body>
+
+</html>

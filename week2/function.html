@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Assignment 1</title>
+    <style>
+
+    </style>
+    <script>
+        //Function Declarations
+        function greet() {
+            console.log('Hello World!');
+        }
+        greet();
+
+        function greetPerson(name, lastName) {
+            console.log('Hello ' + name + " " + lastName + "!");
+        }
+        greetPerson('John', 'Smith'); // name is parameter & John is the argument
+        greetPerson('Marry');
+        greetPerson('Clark', 'Wilson');
+
+
+        // //Function Expressions
+        const goodbye = function () {
+            console.log('Goodbye World!');
+        };
+        goodbye();
+
+        // //Function() Constructors
+        const hi = new Function('console.log("Hi World!");');
+        hi();
+
+
+        //Improved Mean Function
+        function mean(...values) {
+            let total = 0;
+            for (const value of values) {
+                total += value;
+            }
+            return total / values.length;
+        }
+        console.log(mean(2, 8, 13, 11, 4, 2));
+
+
+        function discount(price, amount = 10) {
+            return price * (100 - amount) / 100;
+        }
+        console.log(discount(20));
+    </script>
+</head>
+
+<body>
+
+    <h1>Functions</h1>
+
+    <div id="first"></div>
+
+
+</body>
+
+</html>
