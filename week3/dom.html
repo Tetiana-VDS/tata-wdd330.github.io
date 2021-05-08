@@ -4,16 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Justice League</title>
-    <script>
-        const body = document.body;
-        console.log(typeof body);
 
-        // const listItems = document.querySelector('#roster');
-        // console.log(listItems.nodeType);
-
-        const highlight = document.getElementById('title');
-        highlight.style.backgroundColor = '#333';
-    </script>
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,6 +21,63 @@
         <li class='vigilante hero' id='bats'>Batman</li>
         <li class='hero'>Wonder Woman</li>
     </ul>
+    <div id="comm"></div>
+    <div id="comm2">Check the Console</div>
+    <script>
+        const body = document.body;
+        console.log(typeof body);
+
+        console.log(window.innerHeight);
+
+        document.body.style.background = "green";
+
+        console.log(navigator.platform);
+
+        const listItems = document.querySelector('#roster');
+        console.log(listItems.nodeType);
+
+        const highlight = document.getElementById('title');
+        highlight.style.backgroundColor = 'yellow';
+
+        for (let i = 0; i < document.body.childNodes.length; i++) {
+            console.log(document.body.childNodes[i]);
+        }
+
+        //or 
+
+        for (let child of document.body.childNodes) {
+            console.log('The shorthand:' + child);
+        }
+
+        let html = document.documentElement;
+        let first = html.firstChild;
+        let last = html.lastChild;
+        console.log(first);
+        console.log(last);
+
+        let parentOfBody = document.documentElement;
+        console.log(body.parentElement);
+
+        let list = document.querySelectorAll("ul>li");
+        for (let item of list) {
+            if (item.matches("li.hero"))
+
+                console.log(item);
+        }
+        console.log(document.body.constructor.name);
+        console.dir(document.body);
+
+        let h1 = document.body.firstChild.nextSibling;
+        console.log(h1.innerHTML);
+        h1.innerHTML = "Changed <u>Text</u>";
+
+        let msg = prompt("Comments:", " ");
+        comm.textContent = msg; // all the tags will be as text
+
+        let comm2 = document.getElementById('comm2');
+        comm2.hidden = true;
+        setInterval(() => comm2.hidden = !comm2.hidden, 500);
+    </script>
 </body>
 
 </html>
