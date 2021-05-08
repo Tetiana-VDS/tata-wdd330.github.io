@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script>
+        var allLis = document.getElementById('content');
+        console.log(allLis.querySelectorAll('li'));
+    </script>
     <style>
         h1,
         h2,
@@ -33,8 +38,9 @@
     <main>
         <h2>Week 03</h2>
         <h3>Notes</h3>
-        <ol>
-            <li>   <a href=""></a>Objects represent entities of the real world. Actions are represented in JavaScript by functions in
+        <ol id="content">
+            <li> <a href=""></a>Objects represent entities of the real world. Actions are represented in JavaScript by
+                functions in
                 properties. A function that is a
                 property of an object is called its method.Methods allow objects to “act” like object.doSomething().
                 Methods can reference the object as <a href="object.html">this</a>.
@@ -59,6 +65,31 @@
             <li><a href="">The Date Object</a>
                 Date objects contain information about dates and times. Each object represents a single moment in time.
             </li>
+            <li>The Document Object Model (DOM) allows you to access elements of a web page and enable interaction with
+                the page by adding and removing elements, changing the order, content and attributes of elements, and
+                even altering how they are styled.</li>
+            <li>
+                There are some methods from DOM Level 0 that can still be employed to access commonly used elements.
+                These include:
+                <ol>
+                    <li>Document.body returns the body element of a web page.
+                    </li>
+                    <li>Document.images returns a node list of all the images contained in the document.</li>
+                    <li> Document.links returns a node list of all the <a> elements and <area> elements that have an
+                            href attribute/li>
+                    <li> Document.anchors returns a node list of all the <a> elements that have a name attribute.
+                    </li>
+                    <li> Document.forms returns a node list of all the forms in the document.</li>
+                </ol>
+            </li>
+            <li>We also can get Elements from Dom by getElementById(), getElementClassName(), getElementByTagName() methods.</li>
+            <li>The document.querySelector() method allows us to use CSS notation to find thefirstelement in the
+                document that matches that matches a CSS selector provided as an argument. If no elements match, it will
+                return null .
+
+                The document.querySelectorAll() method also uses CSS notation but returns a node list ofallthe elements
+                in the document that match the CSS query selector. If no elements match, it will return an empty node
+                list./li>
             <a href=""></a>
         </ol>
 

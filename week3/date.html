@@ -12,7 +12,26 @@
         const christmas = new Date('2017 12 25'); //any date 
         console.log(christmas.toString())
 
-        diwali.getDay();
+
+        inUkraine = new Date().getTimezoneOffset();
+        console.log(inUkraine) //returns the difference, in minutes, between the local time and UTC
+
+
+        let now = new Date();
+        console.log(now.getDate())
+        console.log(now.getFullYear())
+        console.log(now.getMonth())
+        console.log(now.getTime().toString())
+
+        // Set a Date
+
+        let d = new Date(2011, 1, 24);
+        let theD = d.setDate(d.getDate() + 2);
+        console.log(theD.toString())
+
+        number = new Number(17);
+        console.log(number)
+        console.log(number.toString())
     </script>
 </head>
 
