@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Search</title>
+</head>
+
+<body>
+    <form name='search' action='/search'>
+        <input name='searchInput'>
+        <button type='submit'>Search</button>
+    </form>
+
+    <br>
+    <div>
+        <select name="" id="select_number">
+            <option value="0">Pick any</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <!-- <p>Super Powers:</p>
+    <label for='flight'>Flight:
+        <input type='checkbox' id='flight' value='Flight' name='powers'>
+    </label>
+    <label for='strength'>Super Strength:
+        <input type='checkbox' id='strength' value='Strength' name='powers'>
+    </label>
+    <label for='speed'>Super Speed:
+        <input type='checkbox' id='speed' value='Super Speed' name='powers'>
+    </label>
+    <label for='energy'>Energy Blasts:
+        <input type='checkbox' id='energy' value='Energy Blasts' name='powers'>
+    </label>
+    <label for='telekinesis'>Telekinesis:
+        <input type='checkbox' id='telekinesis' value='Telekinesis' name='powers'>
+    </label> -->
+    <script src='js/main.js'></script>
+    <script>
+        let select = document.querySelector(select_number);
+        select.onchange = function () {
+            console.log(select.value);
+        }
+    </script>
+</body>
+
+</html>
